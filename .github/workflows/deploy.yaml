@@ -14,7 +14,7 @@ jobs:
         run: |
           git config --global user.name $MY_NAME
           git config --global user.email $MY_EMAIL
-          git remote set-url origin https://$MY_NAME:${{ secrets.GH_PAT }}@github.com/leetdavid/leetdavid.github.io.git
+          git remote set-url origin https://leetdavid:${{ secrets.GH_PAT }}@github.com/leetdavid/leetdavid.github.io.git
         env:
           MY_NAME: David Lee
           MY_EMAIL: leetdavidu@gmail.com
