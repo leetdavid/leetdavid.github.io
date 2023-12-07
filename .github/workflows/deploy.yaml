@@ -7,6 +7,7 @@ jobs:
   # Build Job
   build:
     runs-on: ubuntu-latest
+    environment: github-pages
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -14,9 +15,9 @@ jobs:
         run: |
           git config --global user.name $MY_NAME
           git config --global user.email $MY_EMAIL
-          git remote set-url origin https://leetdavid:${{ secrets.GH_PAT }}@github.com/leetdavid/leetdavid.github.io.git
+          git remote set-url origin https://$MY_NAME:${{ secrets.GH_PAT }}@github.com/$MY_NAME/leetdavid.github.io.git
         env:
-          MY_NAME: David Lee
+          MY_NAME: leetdavid
           MY_EMAIL: leetdavidu@gmail.com
       - name: Setup bun
         uses: oven-sh/setup-bun@v1
