@@ -12,8 +12,11 @@ jobs:
         uses: actions/checkout@v4
       - name: Set git user and email
         run: |
-          git config --global user.name ${{ secrets.MY_NAME }}
-          git config --global user.email ${{ secrets.MY_EMAIL }}
+          git config --global user.name $MY_NAME
+          git config --global user.email $MY_EMAIL
+        env:
+          MY_NAME: David Lee
+          MY_EMAIL: leetdavidu@gmail.com
       - name: Setup bun
         uses: oven-sh/setup-bun@v1
       - name: Install
