@@ -54,6 +54,6 @@
     "*.{js,css,md}": "prettier --write"
   },
   "optionalDependencies": {
-    "esbuild": "^0.19.8"
+    "esbuild": "0.18.20"
   }
 }
