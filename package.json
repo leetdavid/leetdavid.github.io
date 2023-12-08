@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "devDependencies": {
     "@playwright/test": "^1.28.1",
-    "@sveltejs/adapter-auto": "^2.0.0",
     "@sveltejs/adapter-static": "^2.0.3",
     "@sveltejs/kit": "^1.27.4",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
@@ -21,6 +20,7 @@
     "postcss": "^8.4.24",
     "postcss-load-config": "^4.0.1",
     "prettier": "^3.1.0",
+    "prettier-plugin-svelte": "^3.1.2",
     "prettier-plugin-tailwindcss": "^0.4.1",
     "radix-icons-svelte": "^1.2.1",
     "svelte": "^5.0.0-next.1",
