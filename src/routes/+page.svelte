@@ -1,6 +1,6 @@
 <script>
-  import { Button } from "$lib/components/ui/button";
-  import { Container } from "$lib/components/ui/container";
+  import { Button } from '$lib/components/ui/button';
+  import { Container } from '$lib/components/ui/container';
 </script>
 
 <Container>
